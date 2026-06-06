@@ -1,0 +1,222 @@
+<!DOCTYPE html><html class="dark" lang="en" style="width: 1280px; height: 2758px; overflow: hidden; position: relative;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Skills &amp; Matrix | STUDIO_IX</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&amp;family=Inter:wght@500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-on-surface": "#303032",
+                        "on-tertiary-fixed-variant": "#39485a",
+                        "on-background": "#e4e2e4",
+                        "secondary": "#ffb2b7",
+                        "tertiary-container": "#081828",
+                        "on-primary-fixed": "#131b2e",
+                        "surface-container-highest": "#353436",
+                        "tertiary-fixed-dim": "#b9c8de",
+                        "surface-bright": "#39393b",
+                        "primary-fixed": "#dae2fd",
+                        "inverse-primary": "#565e74",
+                        "surface-container-high": "#2a2a2b",
+                        "primary-container": "#0f172a",
+                        "surface-tint": "#bec6e0",
+                        "on-tertiary": "#233143",
+                        "surface-slate": "#1E293B",
+                        "surface-dim": "#131315",
+                        "on-error-container": "#ffdad6",
+                        "primary": "#bec6e0",
+                        "on-secondary-container": "#ffc2c4",
+                        "on-surface": "#e4e2e4",
+                        "tertiary": "#b9c8de",
+                        "background": "#131315",
+                        "glow-magenta": "rgba(244, 63, 94, 0.4)",
+                        "surface-container-lowest": "#0e0e10",
+                        "outline-variant": "#45464d",
+                        "on-secondary-fixed": "#40000d",
+                        "on-primary": "#283044",
+                        "secondary-fixed-dim": "#ffb2b7",
+                        "surface-container-low": "#1b1b1d",
+                        "on-primary-container": "#798098",
+                        "surface": "#131315",
+                        "on-secondary-fixed-variant": "#92002a",
+                        "border-magenta": "rgba(244, 63, 94, 0.2)",
+                        "surface-variant": "#353436",
+                        "on-tertiary-container": "#738296",
+                        "inverse-surface": "#e4e2e4",
+                        "secondary-container": "#b50036",
+                        "on-tertiary-fixed": "#0d1c2d",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "primary-fixed-dim": "#bec6e0",
+                        "tertiary-fixed": "#d4e4fa",
+                        "on-secondary": "#67001b",
+                        "on-surface-variant": "#c6c6cd",
+                        "surface-container": "#1f1f21",
+                        "outline": "#909097",
+                        "secondary-fixed": "#ffdadb",
+                        "error-container": "#93000a",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "stack-sm": "8px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "section-gap": "160px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "section-number": ["Syne"],
+                        "headline-lg": ["Syne"],
+                        "display-xl": ["Syne"],
+                        "label-caps": ["Inter"],
+                        "headline-lg-mobile": ["Syne"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "section-number": ["180px", {"lineHeight": "180px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "0.02em", "fontWeight": "800"}],
+                        "display-xl": ["120px", {"lineHeight": "100px", "letterSpacing": "0.05em", "fontWeight": "800"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .skill-badge-glow:hover {
+            box-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
+            border-color: rgba(244, 63, 94, 1);
+        }
+        .section-number-bg {
+            color: rgba(244, 63, 94, 0.1);
+        }
+    
+        body, h1, h2, h3, h4, h5, h6, p, span, label, a {
+            word-break: keep-all !important;
+            overflow-wrap: normal !important;
+            hyphens: none !important;
+            -webkit-hyphens: none;
+            -ms-hyphens: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/40 dark:bg-background/40 backdrop-blur-[24px] border-b border-border-magenta/20">
+<div class="flex justify-between items-center px-gutter py-6 max-w-container-max mx-auto">
+<span class="font-headline-lg text-headline-lg-mobile tracking-tighter text-on-surface uppercase">D'ELIA KRISTEL</span>
+
+
+</div>
+</nav>
+<!-- SideNavBar (Desktop Only) -->
+<aside class="hidden lg:flex fixed left-0 top-0 h-full w-80 bg-surface-dim/90 dark:bg-surface-dim/90 backdrop-blur-[24px] border-r border-border-magenta/20 shadow-[10px_0_30px_rgba(244,63,94,0.1)] flex-col py-10 z-40">
+<div class="px-8 mb-12">
+<div class="w-16 h-16 bg-surface-container-high rounded-full mb-4 overflow-hidden border border-border-magenta">
+<img alt="Student Portrait" class="w-full h-full object-cover grayscale" data-alt="A striking cinematic portrait of a young digital artist with sharp features, illuminated by dramatic magenta and cyan neon rim lighting against a deep midnight blue background. The style is high-contrast cyberpunk minimalism, capturing a focused and visionary expression with technical sophistication. The skin reflects subtle digital textures, emphasizing the fusion of human artistry and code." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTwzqcQ8SDKVAJ3m0H17VgP6T_BfLMSm_1CWtAFzpsp98IiqyKFb_rHWLFBmjCMmTS6Hgffz5Qr9XOHa2AwDqbmEcn9RS0gnEcgmUm25Lld9Xwo34vTB-Z_ancP3-70bBpM87hP0mUk5_nHItnHlV1PuanUF41KC3U7JR_WaN53ELXeXQw9pYK3u01RC-IL4V2HbgUSERndZ3pSzy9aIyK3XYJJ_vUKz3elBn4EbAaMyLBWdy4iId0xuk5kTABxxO0RS2UwKfWlrY">
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight"><br></h2>
+<p class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-widest mt-1"><br></p>
+</div>
+<nav class="flex-grow">
+
+
+
+
+</nav>
+<div class="px-8 mt-auto flex flex-col gap-4">
+
+<div class="flex gap-4 border-t border-outline-variant/30 pt-6">
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">
+<span class="material-symbols-outlined" data-icon="code">code</span>
+</a>
+<a class="text-on-surface-variant hover:text-secondary transition-all" href="#">
+
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="lg:ml-80 pt-32 px-gutter md:px-12 xl:px-24">
+<!-- Hero Section -->
+
+<!-- Technical Skills Section -->
+<section class="max-w-container-max mx-auto mb-section-gap relative">
+<span class="font-section-number text-section-number section-number-bg absolute -top-32 right-0 z-0 opacity-5 md:opacity-10">01</span>
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-stack-lg items-start">
+<div class="md:col-span-12"><h2 class="font-headline-lg text-headline-lg-mobile text-on-surface text-center">DIARI E RELAZIONI</h2></div>
+<div class="md:col-span-12 grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Skill Card -->
+<div class="bg-surface-container-low border-l-4 border-secondary p-8 skill-badge-glow transition-all duration-300">
+
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2">Diari</h3>
+<p class="text-on-surface-variant text-sm mb-6">Lunedì 10/06/2024: Conoscenza della classe, preparazione di attività e successivo svolgimento di queste<div>Martedì 11/06/2024:Conoscenza della classe in maniera più approfondita e primi momenti individuali di gestione dei bambini.<br class="">Mercoledì 12/06/2024:Mattinata incentrata sul conoscimento e lo svolgimeto di attività del bambino della classe con problemi di autismo.</div><div><span style="font-size: 0.875rem;">Giovedì 13/06/2024:Prove per lo spettacolo da svolgere durante il pomeriggio del 14 giugno</span></div><div>Venerdì 14/06/2024: Prove finali e saluto della classe.</div></p>
+<div class="flex flex-wrap gap-2">
+
+
+
+</div>
+</div>
+<!-- Skill Card -->
+<div class="bg-surface-container-low border-l-4 border-secondary p-8 skill-badge-glow transition-all duration-300">
+
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-2 whitespace-nowrap" data-stitch-orig-opacity="0">Relazione</h3>
+<p class="text-on-surface-variant text-sm mb-6">Relazione riassuntiva dell'attività svolta nel complesso&nbsp;</p>
+<div class="flex flex-wrap gap-2">
+
+
+</div>
+</div>
+<!-- Web Dev Card moved to a separate row or kept below -->
+
+</div>
+</div>
+</section>
+<!-- Artistic Vision Section -->
+<section class="max-w-container-max mx-auto mb-section-gap relative">
+
+
+</section>
+<!-- Soft Skills Section -->
+<section class="max-w-container-max mx-auto mb-section-gap relative">
+<span class="font-section-number text-section-number section-number-bg absolute -top-32 right-1/4 z-0 opacity-5 md:opacity-10">03</span>
+<div class="relative z-10">
+
+
+</div>
+</section>
+</main>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

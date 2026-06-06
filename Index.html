@@ -1,0 +1,233 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Syne:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-on-surface": "#303032",
+                    "on-tertiary-fixed-variant": "#39485a",
+                    "on-background": "#e4e2e4",
+                    "secondary": "#ffb2b7",
+                    "tertiary-container": "#081828",
+                    "on-primary-fixed": "#131b2e",
+                    "surface-container-highest": "#353436",
+                    "tertiary-fixed-dim": "#b9c8de",
+                    "surface-bright": "#39393b",
+                    "primary-fixed": "#dae2fd",
+                    "inverse-primary": "#565e74",
+                    "surface-container-high": "#2a2a2b",
+                    "primary-container": "#0f172a",
+                    "surface-tint": "#bec6e0",
+                    "on-tertiary": "#233143",
+                    "surface-slate": "#1E293B",
+                    "surface-dim": "#131315",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#bec6e0",
+                    "on-secondary-container": "#ffc2c4",
+                    "on-surface": "#e4e2e4",
+                    "tertiary": "#b9c8de",
+                    "background": "#131315",
+                    "glow-magenta": "rgba(244, 63, 94, 0.4)",
+                    "surface-container-lowest": "#0e0e10",
+                    "outline-variant": "#45464d",
+                    "on-secondary-fixed": "#40000d",
+                    "on-primary": "#283044",
+                    "secondary-fixed-dim": "#ffb2b7",
+                    "surface-container-low": "#1b1b1d",
+                    "on-primary-container": "#798098",
+                    "surface": "#131315",
+                    "on-secondary-fixed-variant": "#92002a",
+                    "border-magenta": "rgba(244, 63, 94, 0.2)",
+                    "surface-variant": "#353436",
+                    "on-tertiary-container": "#738296",
+                    "inverse-surface": "#e4e2e4",
+                    "secondary-container": "#b50036",
+                    "on-tertiary-fixed": "#0d1c2d",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "primary-fixed-dim": "#bec6e0",
+                    "tertiary-fixed": "#d4e4fa",
+                    "on-secondary": "#67001b",
+                    "on-surface-variant": "#c6c6cd",
+                    "surface-container": "#1f1f21",
+                    "outline": "#909097",
+                    "secondary-fixed": "#ffdadb",
+                    "error-container": "#93000a",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "stack-sm": "8px",
+                    "stack-md": "24px",
+                    "stack-lg": "48px",
+                    "section-gap": "160px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "section-number": ["Syne"],
+                    "headline-lg": ["Syne"],
+                    "display-xl": ["Syne"],
+                    "label-caps": ["Inter"],
+                    "headline-lg-mobile": ["Syne"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "section-number": ["180px", {"lineHeight": "180px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "0.02em", "fontWeight": "800"}],
+                    "display-xl": ["120px", {"lineHeight": "100px", "letterSpacing": "0.05em", "fontWeight": "800"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 30px rgba(244, 63, 94, 0.4);
+            border-color: rgba(244, 63, 94, 1);
+        }
+        .text-magenta { color: #F43F5E; }
+        .bg-magenta { background-color: #F43F5E; }
+        .border-magenta { border-color: rgba(244, 63, 94, 0.2); }
+    
+        h1, h2, h3, p, span, div, a {
+            word-break: keep-all !important;
+            overflow-wrap: normal !important;
+            hyphens: none !important;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-secondary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/40 backdrop-blur-[24px] border-b border-border-magenta/20">
+<nav class="flex justify-between items-center px-gutter py-6 max-w-container-max mx-auto">
+<div class="font-headline-lg text-headline-lg-mobile tracking-tighter text-on-surface uppercase">d'elia kristel</div>
+
+
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center items-center bg-primary-container px-gutter pt-32 overflow-hidden relative">
+<div class="absolute inset-0 opacity-10 pointer-events-none flex justify-center items-center">
+<div class="font-section-number text-section-number text-magenta">01</div>
+</div>
+<div class="max-w-container-max w-full z-10 text-center">
+<div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-4">
+<span class="bg-secondary-container text-white px-3 py-1 font-label-caps text-label-caps">Progetti FSL</span>
+<span class="text-on-primary-container font-label-caps text-label-caps"><br></span>
+</div>
+<h1 class="font-display-xl text-magenta leading-none mb-10 text-4xl md:text-5xl" data-stitch-orig-opacity="0">Le mie esperienze PCTO al liceo</h1>
+<div class="flex justify-center">
+<div class="max-w-2xl">
+<p class="font-body-md text-body-md text-on-primary-container border-t-2 md:border-t-0 md:border-l-2 border-secondary-container pt-6 md:pt-0 md:pl-6 text-center md:text-left">Sito che ripercorre le due esperienze PCTO più formative ai fini del mio percorso all'interno del liceo Amaldi.</p>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+<span class="font-label-caps text-label-caps text-on-primary-container rotate-90 mb-4"><br></span>
+<div class="w-[1px] h-20 bg-secondary-container/40 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1/2 bg-magenta"></div>
+</div>
+</div>
+</section>
+<!-- The 3 Sketches Section -->
+<section class="py-section-gap px-gutter max-w-container-max mx-auto relative">
+<div class="absolute left-1/2 top-0 opacity-10 pointer-events-none -translate-x-1/2 -translate-y-1/2">
+<div class="font-section-number text-section-number text-magenta">02</div>
+</div>
+<div class="flex flex-col items-center text-center mb-24 border-b border-outline-variant/30 pb-10">
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface mb-2 text-4xl md:text-5xl" data-stitch-orig-opacity="0">Le due esperienze</h2>
+<p class="font-label-caps text-label-caps text-secondary mb-6">Ospedale Bolognini — Scuola materna Bruno Munari</p>
+<div class="max-w-lg">
+<p class="font-body-md text-body-md text-on-surface-variant italic"><br></p>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-10 items-stretch md:grid-cols-2 justify-center">
+<!-- Card 1: Visione Analitica -->
+
+<!-- Card 2: Struttura (Ospedale Bolognini) -->
+<div class="group relative bg-surface-container-low border border-magenta p-1 px-1 glow-hover transition-all duration-500 flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden bg-background">
+<img alt="Structural architectural sketch" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XaUHr1DdnaFUBxZxkw0Mewsxj4ZkACVpsXYt8Pn9g_T_teKaL1h8dUfn0Kr02u0x_UImhgMn7aNB-Li22-3fg4lEFDDDNEuH8nJqlC80o_mnPQU_Fqxilr-qAzJGOw7S_qllWALyao4HYsOoTRbONCrICehSsqg7tntJ8Kf24hah_FPmb8L9q7yxlBDafVpkm8rIBmjH5QE8GPUbhMI_Og2Ou3NrVb6E9wh2H0OaT7XQCJfPoj_Ws13bo3bAxCahLZuSBXLzHzA">
+<div class="absolute top-4 left-4 bg-background px-4 py-2 border-l-4 border-magenta">
+<span class="font-label-caps text-label-caps text-on-surface"></span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-lg text-[32px] text-on-surface mb-4" data-stitch-orig-opacity="1">Ospedale Bolognini</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Cinque giorni all'interno della struttura sanitaria Bolognini di Seriate con lo scopo di conoscere meglio l'ambiente ospedaliero.&nbsp;</p>
+<a href="Ospedale.html" class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
+<span class="">Espolora i dettagli dell'experience</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Umanità (Scuola Materna) -->
+<div class="group relative bg-surface-container-low border border-magenta p-1 px-1 glow-hover transition-all duration-500 flex flex-col">
+<div class="relative aspect-[3/4] overflow-hidden bg-background">
+<img alt="Humanity expressive sketch" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC5ks4JQxB3nNidrSaf7pYJT52TELW20nm8GPl42mLUFI7eWGqvCwnFlZ7NgMxBEwwHu1wHolMvYr9Jnoue4XXx8RLCBxBcpJ1T_-Ulufry_c8GKh0C6SG6dxWWNZApBhlDWTBjg-qerINrntZSkpbCkAo_9Rst_49k-fy5DpO1bNOkh09uUG3gXEafLu-bpZ8eT64sXoNq3gKy7kk2gKbh5s6CkJRPuxUDWsiDev336s4Qyh4-7jBzX-AxaEobbh2mY1gPQcE7qQ">
+<div class="absolute top-4 left-4 bg-background px-4 py-2 border-l-4 border-magenta">
+<span class="font-label-caps text-label-caps text-on-surface"></span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline-lg text-[32px] text-on-surface mb-4 whitespace-nowrap" style="white-space: nowrap;" data-stitch-orig-opacity="0">Scuola Materna Bruno Munari</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Cinque giorni all'interno dell'asilo Bruno Munari di Torre Boldone con lo scopo di capire se potesse essere un ambiente adatto al mio lavoro futuro.</p>
+<!-- MODIFICATO ESCLUSIVAMENTE IL COLLEGAMENTO QUI SOTTO -->
+<a href="Asilo_2.html" class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
+<span class="">Esplora i dettagli dell'esperienza</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Closing -->
+
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 mt-section-gap bg-surface-container-lowest border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md text-center md:text-left">
+<div class="flex flex-col items-center md:items-start">
+<div class="font-label-caps text-label-caps text-secondary mb-2 uppercase"><br></div>
+<div class="font-body-md text-body-md text-on-surface-variant"><br></div>
+</div>
+<div class="flex gap-8 justify-center">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#"><br></a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#"><br></a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#"><br></a>
+</div>
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+</body></html>
