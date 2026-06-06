@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Syne:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!DOCTYPE html><html class="dark" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Syne:wght@700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
       tailwind.config = {
@@ -109,20 +107,21 @@
         .text-magenta { color: #F43F5E; }
         .bg-magenta { background-color: #F43F5E; }
         .border-magenta { border-color: rgba(244, 63, 94, 0.2); }
+    
+        h1, h2, h3, p, span, div, a {
+            word-break: keep-all !important;
+            overflow-wrap: normal !important;
+            hyphens: none !important;
+        }
     </style>
 </head>
 <body class="bg-background text-on-surface selection:bg-secondary-container selection:text-white">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-background/40 backdrop-blur-[24px] border-b border-border-magenta/20">
 <nav class="flex justify-between items-center px-gutter py-6 max-w-container-max mx-auto">
-<div class="font-headline-lg text-headline-lg-mobile tracking-tighter text-on-surface uppercase">STUDIO_IX</div>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-primary relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-secondary-container font-label-caps text-label-caps" href="#">Work</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps" href="#">Art</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps" href="#">Profile</a>
-<a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps" href="#">Lab</a>
-</div>
-<button class="bg-secondary-container text-white px-8 py-3 font-label-caps text-label-caps hover:scale-95 transition-transform">Contact</button>
+<div class="font-headline-lg text-headline-lg-mobile tracking-tighter text-on-surface uppercase">d'elia kristel</div>
+
+
 </nav>
 </header>
 <main>
@@ -133,23 +132,19 @@
 </div>
 <div class="max-w-container-max w-full z-10 text-center">
 <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-4">
-<span class="bg-secondary-container text-white px-3 py-1 font-label-caps text-label-caps">PCTO 2024</span>
-<span class="text-on-primary-container font-label-caps text-label-caps">PORTFOLIO COLLECTIONS</span>
+<span class="bg-secondary-container text-white px-3 py-1 font-label-caps text-label-caps">Progetti FSL</span>
+<span class="text-on-primary-container font-label-caps text-label-caps"><br></span>
 </div>
-<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl text-magenta uppercase leading-none mb-10">
-                    FROM SKETCH<br/>TO CODE
-                </h1>
+<h1 class="font-display-xl text-magenta leading-none mb-10 text-4xl md:text-5xl" data-stitch-orig-opacity="0">Le mie esperienze PCTO al liceo</h1>
 <div class="flex justify-center">
 <div class="max-w-2xl">
-<p class="font-body-md text-body-md text-on-primary-container border-t-2 md:border-t-0 md:border-l-2 border-secondary-container pt-6 md:pt-0 md:pl-6 text-center md:text-left">
-                            Exploring the intersection where artistic expression meets technical precision. This portfolio documents a journey through the "Magenta Vision"—a framework that translates raw creative sketches into systematic digital architectures.
-                        </p>
+<p class="font-body-md text-body-md text-on-primary-container border-t-2 md:border-t-0 md:border-l-2 border-secondary-container pt-6 md:pt-0 md:pl-6 text-center md:text-left">Sito che ripercorre le due esperienze PCTO più formative ai fini del mio percorso all'interno del liceo Amaldi.</p>
 </div>
 </div>
 </div>
 <!-- Scroll Indicator -->
 <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
-<span class="font-label-caps text-label-caps text-on-primary-container rotate-90 mb-4">SCROLL</span>
+<span class="font-label-caps text-label-caps text-on-primary-container rotate-90 mb-4"><br></span>
 <div class="w-[1px] h-20 bg-secondary-container/40 relative overflow-hidden">
 <div class="absolute top-0 left-0 w-full h-1/2 bg-magenta"></div>
 </div>
@@ -161,102 +156,78 @@
 <div class="font-section-number text-section-number text-magenta">02</div>
 </div>
 <div class="flex flex-col items-center text-center mb-24 border-b border-outline-variant/30 pb-10">
-<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface uppercase mb-2">THE 3 SKETCHES</h2>
-<p class="font-label-caps text-label-caps text-secondary mb-6">CORE PILLARS OF DEVELOPMENT</p>
+<h2 class="font-headline-lg text-headline-lg-mobile text-on-surface mb-2 text-4xl md:text-5xl" data-stitch-orig-opacity="0">Le due esperienze</h2>
+<p class="font-label-caps text-label-caps text-secondary mb-6">Ospedale Bolognini — Scuola materna Bruno Munari</p>
 <div class="max-w-lg">
-<p class="font-body-md text-body-md text-on-surface-variant italic">
-                        "Visualizing complex systems through the lens of human experience."
-                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant italic"><br></p>
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-stretch">
+<div class="grid grid-cols-1 gap-10 items-stretch md:grid-cols-2 justify-center">
 <!-- Card 1: Visione Analitica -->
+
+<!-- Card 2: Struttura (Ospedale Bolognini) -->
 <div class="group relative bg-surface-container-low border border-magenta p-1 px-1 glow-hover transition-all duration-500 flex flex-col">
 <div class="relative aspect-[3/4] overflow-hidden bg-background">
-<img alt="Analytical vision photograph" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA__L5fkuj2kPRUIfDRE0tZTo3X9975EZT34a5o1u9fB0LnWEZDIFnOiwF3Gpr4t0nW2ufVAvBjElhBDNrinPTyuRfcz7n2BFM23uic0PoM5Np7ZNSCIm7q6V3akmNdZJ18qwctjCxbuMAWLksHsJkupyIdR1Ee_zMhMKZqHHL7D71xWpvKE2AsKXBB79Ofut4w0sgxA2USuVOUfg5ckm48G2abndYdNAIcZVwUb8--BTGOocP-28AI262B9sUL9MffPaQS5ptY4Ak"/>
+<img alt="Structural architectural sketch" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XaUHr1DdnaFUBxZxkw0Mewsxj4ZkACVpsXYt8Pn9g_T_teKaL1h8dUfn0Kr02u0x_UImhgMn7aNB-Li22-3fg4lEFDDDNEuH8nJqlC80o_mnPQU_Fqxilr-qAzJGOw7S_qllWALyao4HYsOoTRbONCrICehSsqg7tntJ8Kf24hah_FPmb8L9q7yxlBDafVpkm8rIBmjH5QE8GPUbhMI_Og2Ou3NrVb6E9wh2H0OaT7XQCJfPoj_Ws13bo3bAxCahLZuSBXLzHzA">
 <div class="absolute top-4 left-4 bg-background px-4 py-2 border-l-4 border-magenta">
-<span class="font-label-caps text-label-caps text-on-surface">ANALYTICAL</span>
+<span class="font-label-caps text-label-caps text-on-surface"></span>
 </div>
 </div>
 <div class="p-8 flex flex-col flex-grow">
-<h3 class="font-headline-lg text-[32px] text-on-surface uppercase mb-4">EYE/TECH</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                            The analytical vision required to dissect visual complexity into functional modules. Digital perception meets human insight.
-                        </p>
-<div class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
-<span>EXPLORE PILLAR</span>
+<h3 class="font-headline-lg text-[32px] text-on-surface mb-4" data-stitch-orig-opacity="1">Ospedale Bolognini</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Cinque giorni all'interno della struttura sanitaria Bolognini di Seriate con lo scopo di conoscere meglio l'ambiente ospedaliero.&nbsp;</p>
+<a href="Ospedale.html" class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
+<span class="">Espolora i dettagli dell'experience</span>
 <span class="material-symbols-outlined">arrow_forward</span>
+</a>
 </div>
 </div>
-</div>
-<!-- Card 2: Struttura -->
+<!-- Card 3: Umanità (Scuola Materna) -->
 <div class="group relative bg-surface-container-low border border-magenta p-1 px-1 glow-hover transition-all duration-500 flex flex-col">
 <div class="relative aspect-[3/4] overflow-hidden bg-background">
-<img alt="Structural architectural sketch" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XaUHr1DdnaFUBxZxkw0Mewsxj4ZkACVpsXYt8Pn9g_T_teKaL1h8dUfn0Kr02u0x_UImhgMn7aNB-Li22-3fg4lEFDDDNEuH8nJqlC80o_mnPQU_Fqxilr-qAzJGOw7S_qllWALyao4HYsOoTRbONCrICehSsqg7tntJ8Kf24hah_FPmb8L9q7yxlBDafVpkm8rIBmjH5QE8GPUbhMI_Og2Ou3NrVb6E9wh2H0OaT7XQCJfPoj_Ws13bo3bAxCahLZuSBXLzHzA"/>
+<img alt="Humanity expressive sketch" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC5ks4JQxB3nNidrSaf7pYJT52TELW20nm8GPl42mLUFI7eWGqvCwnFlZ7NgMxBEwwHu1wHolMvYr9Jnoue4XXx8RLCBxBcpJ1T_-Ulufry_c8GKh0C6SG6dxWWNZApBhlDWTBjg-qerINrntZSkpbCkAo_9Rst_49k-fy5DpO1bNOkh09uUG3gXEafLu-bpZ8eT64sXoNq3gKy7kk2gKbh5s6CkJRPuxUDWsiDev336s4Qyh4-7jBzX-AxaEobbh2mY1gPQcE7qQ">
 <div class="absolute top-4 left-4 bg-background px-4 py-2 border-l-4 border-magenta">
-<span class="font-label-caps text-label-caps text-on-surface">STRUCTURE</span>
+<span class="font-label-caps text-label-caps text-on-surface"></span>
 </div>
 </div>
 <div class="p-8 flex flex-col flex-grow">
-<h3 class="font-headline-lg text-[32px] text-on-surface uppercase mb-4">HOSPITAL</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                            Designing systems with the reliability of medical infrastructure. Code that provides safety, order, and critical support.
-                        </p>
-<div class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
-<span>EXPLORE PILLAR</span>
+<h3 class="font-headline-lg text-[32px] text-on-surface mb-4 whitespace-nowrap" style="white-space: nowrap;" data-stitch-orig-opacity="0">Scuola Materna Bruno Munari</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Cinque giorni all'interno dell'asilo Bruno Munari di Torre Boldone con lo scopo di capire se potesse essere un ambiente adatto al mio lavoro futuro.</p>
+<!-- MODIFICATO ESCLUSIVAMENTE IL COLLEGAMENTO QUI SOTTO -->
+<a href="Asilo_2.html" class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
+<span class="">Esplora i dettagli dell'esperienza</span>
 <span class="material-symbols-outlined">arrow_forward</span>
-</div>
-</div>
-</div>
-<!-- Card 3: Umanità -->
-<div class="group relative bg-surface-container-low border border-magenta p-1 px-1 glow-hover transition-all duration-500 flex flex-col">
-<div class="relative aspect-[3/4] overflow-hidden bg-background">
-<img alt="Humanity expressive sketch" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC5ks4JQxB3nNidrSaf7pYJT52TELW20nm8GPl42mLUFI7eWGqvCwnFlZ7NgMxBEwwHu1wHolMvYr9Jnoue4XXx8RLCBxBcpJ1T_-Ulufry_c8GKh0C6SG6dxWWNZApBhlDWTBjg-qerINrntZSkpbCkAo_9Rst_49k-fy5DpO1bNOkh09uUG3gXEafLu-bpZ8eT64sXoNq3gKy7kk2gKbh5s6CkJRPuxUDWsiDev336s4Qyh4-7jBzX-AxaEobbh2mY1gPQcE7qQ"/>
-<div class="absolute top-4 left-4 bg-background px-4 py-2 border-l-4 border-magenta">
-<span class="font-label-caps text-label-caps text-on-surface">HUMANITY</span>
-</div>
-</div>
-<div class="p-8 flex flex-col flex-grow">
-<h3 class="font-headline-lg text-[32px] text-on-surface uppercase mb-4">CHILDREN</h3>
-<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
-                            Technology exists for the next generation. This pillar focuses on empathy, accessibility, and the pure joy of discovery.
-                        </p>
-<div class="flex items-center gap-2 text-magenta font-label-caps text-label-caps group-hover:gap-4 transition-all">
-<span>EXPLORE PILLAR</span>
-<span class="material-symbols-outlined">arrow_forward</span>
-</div>
+</a>
 </div>
 </div>
 </div>
 </section>
 <!-- CTA / Closing -->
-<section class="py-section-gap px-gutter bg-surface-container-lowest">
-<div class="max-w-container-max mx-auto text-center">
-<h2 class="font-display-xl text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase mb-8">READY TO<br/>TRANSLATE?</h2>
-<div class="flex flex-col md:flex-row justify-center items-center gap-6">
-<button class="w-full md:w-auto bg-magenta text-white px-12 py-5 font-headline-lg text-[24px] uppercase hover:scale-105 transition-transform">Download CV</button>
-<button class="w-full md:w-auto border-2 border-magenta text-magenta px-12 py-5 font-headline-lg text-[24px] uppercase hover:bg-magenta hover:text-white transition-all">Full Project List</button>
-</div>
-</div>
-</section>
+
 </main>
 <!-- Footer -->
 <footer class="w-full py-20 mt-section-gap bg-surface-container-lowest border-t border-outline-variant/30">
 <div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md text-center md:text-left">
 <div class="flex flex-col items-center md:items-start">
-<div class="font-label-caps text-label-caps text-secondary mb-2 uppercase">STUDIO_IX / SYSTEM_ARTIST</div>
-<div class="font-body-md text-body-md text-on-surface-variant">©2024 SYSTEM_ARTIST. ALL RIGHTS RESERVED.</div>
+<div class="font-label-caps text-label-caps text-secondary mb-2 uppercase"><br></div>
+<div class="font-body-md text-body-md text-on-surface-variant"><br></div>
 </div>
 <div class="flex gap-8 justify-center">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Privacy</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Terms</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#">Source</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#"><br></a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#"><br></a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-all" href="#"><br></a>
 </div>
-<div class="flex gap-4 justify-center">
-<span class="material-symbols-outlined text-on-tertiary-container">code</span>
-<span class="material-symbols-outlined text-on-tertiary-container">palette</span>
-<span class="material-symbols-outlined text-on-tertiary-container">terminal</span>
-</div>
+
 </div>
 </footer>
+
+
+
+
+
+
+
+
+
+
 </body></html>
